@@ -1,0 +1,280 @@
+which state is the smallest ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _cityid ( denver , _ ) ) ) ) <EOS>
+which is the longest river in usa ?	_answer ( NV , _longest ( V0 , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+what are the highest points of all the states ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _state ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( colorado ) ) ) ) ) <EOS>
+what are the major rivers in ohio ?	_answer ( NV , ( _major ( V0 ) , _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( ohio ) ) ) ) <EOS>
+name the major rivers in florida ?	_answer ( NV , ( _major ( V0 ) , _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( louisiana ) ) ) ) <EOS>
+what is the population of erie pennsylvania ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( boston , _ ) ) ) ) <EOS>
+what state has the lowest population density ?	_answer ( NV , ( _state ( V0 ) , _density ( NV , V1 ) , _const ( V0 , _cityid ( flint , _ ) ) ) ) <EOS>
+where is the smallest city ?	_answer ( NV , ( _loc ( V0 , NV ) , _const ( V0 , _cityid ( ' san diego ' , _ ) ) ) ) <EOS>
+which rivers run through states that border the state with the capital austin ?	_answer ( NV , ( _river ( V0 ) , _traverse ( V0 , NV ) , _state ( V0 ) , _loc ( NV , V1 ) , _capital ( V0 ) , _const ( V0 , _cityid ( denver , _ ) ) , _traverse ( V0 , V1 ) ) ) <EOS>
+what is the lowest point in massachusetts ?	_answer ( NV , _lowest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( florida ) ) ) ) ) <EOS>
+what is the population of maryland ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( maryland ) ) ) ) <EOS>
+what states does the mississippi river run through ?	_answer ( NV , ( _state ( V0 ) , _const ( NV , _riverid ( mississippi ) ) , _traverse ( V0 , V1 ) ) , V2 ) ) <EOS>
+where is portland ?	_answer ( NV , ( _loc ( NV , V1 ) , _const ( V0 , _cityid ( ' san diego ' , _ ) ) ) ) <EOS>
+what are the cities in states through which the mississippi runs ?	_answer ( NV , ( _city ( V0 ) , _loc ( V0 , NV ) , _state ( V0 ) , _const ( NV , _riverid ( mississippi ) ) , _traverse ( V0 , V1 ) ) ) <EOS>
+how many people live in houston ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( kalamazoo , _ ) ) ) ) <EOS>
+what are the populations of states through which the mississippi river runs ?	_answer ( NV , ( _population ( NV , V1 ) , _state ( V0 ) , _const ( NV , _riverid ( mississippi ) ) , _traverse ( V0 , V1 ) ) ) <EOS>
+what states does the ohio river run through ?	_answer ( NV , ( _state ( V0 ) , _const ( NV , _riverid ( ohio ) ) , _river ( V0 ) , _traverse ( V0 , V1 ) ) , V2 ) ) <EOS>
+which state has the most population ?	_answer ( NV , _most ( V0 , NV , ( _state ( V1 ) , _population ( V1 , V0 ) ) ) ) <EOS>
+what states surround kentucky ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) <EOS>
+what is the capital of north dakota ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( ' south dakota ' ) ) ) ) <EOS>
+how many cities are there in the united states ?	_answer ( NV , _count ( NV , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) , V2 ) ) <EOS>
+what is the largest capital city in the usa ?	_answer ( NV , _largest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+what are the populations of states which border texas ?	_answer ( NV , ( _population ( NV , V1 ) , _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+what is the capital of states that have cities named durham ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _cityid ( boston , _ ) ) , _loc ( V0 , V1 ) ) , V2 ) ) <EOS>
+what is the biggest city in kansas ?	_answer ( NV , _largest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( kansas ) ) ) ) ) <EOS>
+what is the population of boulder ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( boston , _ ) ) ) ) <EOS>
+which state has the greatest population ?	_answer ( NV , _largest ( NV , ( _state ( V1 ) , _population ( V1 , V0 ) ) ) ) <EOS>
+what is the population of houston ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( boston , _ ) ) ) ) <EOS>
+how many states are there ?	_answer ( NV , _count ( NV , ( _state ( V0 ) , _const ( V0 , _stateid ( arizona ) ) ) , V2 ) ) <EOS>
+what states border the state with the smallest area ?	_answer ( NV , ( _state ( V0 ) , _area ( V0 , NV ) , _smallest ( NV , ( _state ( V1 ) , _area ( V1 , V0 ) ) ) ) ) <EOS>
+what is the longest river that flows through a state that borders indiana ?	_answer ( NV , _longest ( V0 , ( _river ( V0 ) , _traverse ( V0 , NV ) , _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( tennessee ) ) ) ) ) <EOS>
+what states border the most populous state ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) <EOS>
+what is the largest city in california ?	_answer ( NV , _largest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) ) <EOS>
+what is the longest river in the states that border nebraska ?	_answer ( NV , _longest ( V0 , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( kansas ) ) ) ) ) <EOS>
+what is the capital of new jersey ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( ' new mexico ' ) ) ) ) <EOS>
+which state has the most major cities ?	_answer ( NV , _most ( V0 , NV , ( _state ( V1 ) , _loc ( V0 , V1 ) , _city ( V0 ) , _loc ( V0 , V1 ) , _city ( V0 ) ) ) ) <EOS>
+how many colorado rivers are there ?	_answer ( NV , _count ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( colorado ) ) ) , V2 ) ) <EOS>
+what is the highest elevation in the united states ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+how many people live in the biggest city in new york state ?	_answer ( NV , _count ( NV , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( ' new mexico ' ) ) ) ) <EOS>
+what are the capitals of states that border missouri ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( missouri ) ) ) ) <EOS>
+what is the length of the river that runs through the most states ?	_answer ( NV , ( _len ( NV , V1 ) , _most ( V0 , NV , ( _river ( V1 ) , _traverse ( V1 , V0 ) , _state ( V1 ) , _traverse ( V1 , V0 ) ) ) ) ) <EOS>
+what is the highest point in the state with capital austin ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _state ( V0 ) , _loc ( NV , V1 ) , _capital ( V0 ) , _const ( V0 , _cityid ( boston , _ ) ) ) ) <EOS>
+what state has the largest capital ?	_answer ( NV , _largest ( NV , ( _state ( V1 ) , _loc ( V0 , NV ) , _const ( V0 , _cityid ( flint , _ ) ) ) ) <EOS>
+what is the capital of massachusetts ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( pennsylvania ) ) ) ) <EOS>
+what states border new jersey ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( ' new mexico ' ) ) ) ) <EOS>
+what states border states that the ohio runs through ?	_answer ( NV , ( _state ( V0 ) , _const ( NV , _riverid ( ohio ) ) , _traverse ( V0 , V1 ) ) , V3 ) ) <EOS>
+which state has the highest elevation ?	_answer ( NV , _highest ( NV , ( _state ( V1 ) , _loc ( V0 , V1 ) , _place ( V0 ) ) ) ) <EOS>
+what is the most populous state through which the mississippi runs ?	_answer ( NV , _largest ( NV , ( _population ( V1 , V0 ) , _state ( V1 ) , _const ( NV , _riverid ( mississippi ) ) , _traverse ( V0 , V1 ) ) ) ) <EOS>
+which is the highest peak not in alaska ?	_answer ( NV , ( _elevation ( NV , V1 ) , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( alaska ) ) ) ) ) ) <EOS>
+what state has the most major cities ?	_answer ( NV , _most ( V0 , NV , ( _state ( V1 ) , _loc ( V0 , V1 ) , _city ( V0 ) ) ) ) <EOS>
+what states have cities named portland ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _const ( V0 , _cityid ( springfield , _ ) ) ) ) <EOS>
+what is the highest point of the state with the smallest population density ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _smallest ( NV , ( _state ( V1 ) , _density ( V1 , V0 ) ) ) ) ) ) <EOS>
+what states border the state with the most major cities ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _major ( V0 ) , _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( _state ) ) ) , V3 ) ) <EOS>
+what is the smallest city in the us ?	_answer ( NV , _smallest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+what is the population of hawaii ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( hawaii ) ) ) ) <EOS>
+what states border indiana ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) <EOS>
+how many states are in the usa ?	_answer ( NV , _count ( NV , ( _state ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _cityid ( austin , _ ) ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) , V2 ) ) <EOS>
+what is the capital of illinois ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( arizona ) ) ) ) <EOS>
+what river traverses the state which borders the most states ?	_answer ( NV , _most ( V0 , NV , ( _state ( V1 ) , _next_to ( V1 , NV ) , _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V0 ) ) ) ) <EOS>
+what states border the state that borders the most states ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _most ( V0 , NV , ( _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V0 ) ) ) ) ) <EOS>
+how long is the colorado river ?	_answer ( NV , ( _len ( NV , V1 ) , _const ( V0 , _riverid ( colorado ) ) , _river ( V0 ) , _traverse ( V0 , V1 ) ) ) <EOS>
+what state has the longest river ?	_answer ( NV , _longest ( NV , ( _state ( V1 ) , _loc ( V0 , V1 ) , _river ( V0 ) ) ) ) <EOS>
+which states border kentucky ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( arizona ) ) ) ) <EOS>
+give me the states that border utah ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) <EOS>
+what is the capital of the state with the largest population density ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _largest ( NV , ( _state ( V1 ) , _density ( V1 , V0 ) ) ) ) ) <EOS>
+what states have cities named plano ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _const ( V0 , _cityid ( austin , _ ) ) ) ) <EOS>
+what states border the state with the most cities ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _most ( V0 , NV , ( _state ( V1 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) ) <EOS>
+how many citizens does the biggest city have in the usa ?	_answer ( NV , _count ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _const ( V0 , _cityid ( springfield , _ ) ) ) , V2 ) ) <EOS>
+how many people reside in utah ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( california ) ) ) ) <EOS>
+what states border montana ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( montana ) ) ) ) <EOS>
+what rivers run through new york ?	_answer ( NV , ( _river ( V0 ) , _traverse ( V0 , NV ) , _const ( V0 , _stateid ( ' new mexico ' ) ) ) ) <EOS>
+what rivers traverses the state which borders the most states ?	_answer ( NV , _most ( V0 , NV , ( _river ( V1 ) , _traverse ( V1 , V0 ) , _state ( V1 ) , _next_to ( V1 , NV ) , _most ( V0 , NV , ( _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V1 ) , _next_to ( V1 , NV ) , _most ( V0 , NV , ( _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V1 ) , _next_to ( V1 , NV ) , _most ( V0
+count the states which have elevations lower than what alabama has ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( alabama ) ) , V3 ) ) <EOS>
+what river flows through the most states ?	_answer ( NV , _most ( V0 , NV , ( _river ( V1 ) , _traverse ( V0 , V1 ) , _state ( V1 ) , _traverse ( V0 , V1 ) ) ) ) <EOS>
+what rivers are there in texas ?	_answer ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+which state has the highest point ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( florida ) ) ) ) ) ) <EOS>
+what state is austin in ?	_answer ( NV , ( _state ( V0 ) , _const ( NV , _cityid ( boston , _ ) ) , _loc ( V0 , V1 ) ) ) <EOS>
+how high is the highest point of alabama ?	_answer ( NV , ( _elevation ( NV , V1 ) , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( alabama ) ) ) ) ) ) <EOS>
+what is the length of the mississippi river ?	_answer ( NV , ( _len ( NV , V1 ) , _const ( V0 , _riverid ( mississippi ) ) , _river ( V0 ) ) , _loc ( V0 , V1 ) ) ) <EOS>
+how many rivers does colorado have ?	_answer ( NV , _count ( NV , ( _river ( V0 ) , _const ( NV , _stateid ( colorado ) ) , _loc ( V1 , V0 ) ) , _const ( V0 , _stateid ( colorado ) ) ) , V2 ) ) <EOS>
+what length is the mississippi ?	_answer ( NV , ( _len ( NV , V1 ) , _const ( V0 , _riverid ( mississippi ) ) ) ) <EOS>
+what state has the most rivers ?	_answer ( NV , _most ( V0 , NV , ( _state ( V1 ) , _loc ( V0 , V1 ) , _river ( V0 ) ) ) ) <EOS>
+how many people lived in austin ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( austin , _ ) ) ) ) <EOS>
+what city in the united states has the highest population density ?	_answer ( NV , _largest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) , _loc ( V0 , V2 ) ) ) <EOS>
+which states have a river ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _const ( V0 , _cityid ( denver , _ ) ) ) ) <EOS>
+what is the highest point in the usa ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+what is the area of florida ?	_answer ( NV , ( _area ( NV , V1 ) , _const ( V0 , _stateid ( maine ) ) ) ) <EOS>
+what is the capital of california ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) <EOS>
+what is the capital of the state with the largest population ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _largest ( NV , ( _state ( V1 ) , _population ( V1 , V0 ) ) ) ) ) <EOS>
+which state has the most major rivers ?	_answer ( NV , _most ( V0 , NV , ( _state ( V1 ) , _loc ( V0 , V1 ) , _major ( V0 ) , _river ( V0 ) ) ) ) <EOS>
+what is the capital of the state with the most inhabitants ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _most ( V0 , NV , ( _state ( V1 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) ) <EOS>
+what is the capital of ohio ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( vermont ) ) ) ) <EOS>
+which state has the lowest elevation ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _lowest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( hawaii ) ) ) ) ) <EOS>
+what is the population of san antonio ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( boston , _ ) ) ) ) <EOS>
+number of states bordering iowa ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( iowa ) ) ) , V3 ) ) <EOS>
+which states does the chattahoochee river run through ?	_answer ( NV , ( _state ( V0 ) , _const ( NV , _riverid ( missouri ) ) , _traverse ( V0 , V1 ) ) ) <EOS>
+how many people live in detroit ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( ' san francisco ' , _ ) ) ) ) <EOS>
+how many states do not have rivers ?	_answer ( NV , _count ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _const ( V0 , _stateid ( tennessee ) ) ) , V2 ) ) <EOS>
+what states border states that border mississippi ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( mississippi ) ) ) ) <EOS>
+what are the major cities in the usa ?	_answer ( NV , ( _major ( V0 ) , _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) <EOS>
+what is the most populous city ?	_answer ( NV , _largest ( NV , ( _population ( V1 , V0 ) , _state ( V1 ) , _const ( V0 , _stateid ( california ) ) ) ) ) <EOS>
+what is the length of the longest river that runs through texas ?	_answer ( NV , ( _len ( NV , V1 ) , _longest ( V0 , ( _river ( V0 ) , _traverse ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) ) ) <EOS>
+how high is mount mckinley ?	_answer ( NV , ( _elevation ( NV , V1 ) , _const ( V0 , _placeid ( ' guadalupe peak ' ) ) ) ) <EOS>
+which state has the lowest population density ?	_answer ( NV , _smallest ( NV , ( _state ( V1 ) , _density ( V1 , V0 ) ) ) ) <EOS>
+give me the number of rivers in california ?	_answer ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) <EOS>
+what is the largest river in washington state ?	_answer ( NV , _largest ( V0 , ( _river ( V0 ) , _loc ( V0 , NV ) , _state ( V0 ) , _const ( V0 , _stateid ( washington ) ) ) ) ) <EOS>
+what is the capital of the florida state ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) <EOS>
+which city in california has the largest population ?	_answer ( NV , _largest ( NV , ( _state ( V1 ) , _population ( V1 , V0 ) ) ) ) <EOS>
+what is the highest point in montana ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( montana ) ) ) ) ) <EOS>
+what is the lowest point in the state of california ?	_answer ( NV , _lowest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _state ( V0 ) , _const ( V0 , _stateid ( california ) ) ) ) ) <EOS>
+what are the major cities in alaska ?	_answer ( NV , ( _major ( V0 ) , _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( alaska ) ) ) ) <EOS>
+what is the combined area of all 50 states ?	_answer ( NV , ( _state ( V0 ) , _area ( V0 ) , _area ( V0 ) ) ) <EOS>
+what is the lowest point in nebraska in meters ?	_answer ( NV , _lowest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( wisconsin ) ) ) ) ) <EOS>
+which is the smallest state ?	_answer ( NV , ( _state ( V0 ) , _const ( V0 , _state ( V0 ) ) ) ) <EOS>
+how many rivers are in iowa ?	_answer ( NV , _count ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( iowa ) ) ) , V2 ) ) <EOS>
+what states border florida ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( arizona ) ) ) ) <EOS>
+what rivers are in texas ?	_answer ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+what are the major cities in the state of california ?	_answer ( NV , ( _major ( V0 ) , _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) <EOS>
+what state is the largest in population ?	_answer ( NV , _largest ( V0 , ( _state ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _cityid ( atlanta , _ ) ) ) ) ) <EOS>
+what is the highest point in the states bordering colorado ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _state ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( colorado ) ) ) ) ) <EOS>
+where is the highest point in hawaii ?	_answer ( NV , ( _loc ( NV , V1 ) , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( hawaii ) ) ) ) ) ) <EOS>
+what is the highest point in iowa ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( iowa ) ) ) ) ) <EOS>
+what are the populations of states through which the mississippi runs ?	_answer ( NV , ( _population ( NV , V1 ) , _state ( V0 ) , _const ( NV , _riverid ( mississippi ) ) , _traverse ( V0 , V1 ) ) ) <EOS>
+what is the capital of iowa ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( iowa ) ) ) ) <EOS>
+which state capital has the smallest population ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _capital ( V0 ) , _const ( V0 , _stateid ( arizona ) ) ) ) <EOS>
+what is the biggest american city in a state with a river ?	_answer ( NV , _largest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( michigan ) ) ) ) ) <EOS>
+which state borders hawaii ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( hawaii ) ) ) ) <EOS>
+how large is alaska ?	_answer ( NV , ( _size ( NV , V1 ) , _const ( V0 , _stateid ( alaska ) ) ) ) <EOS>
+what is the smallest state bordering wyoming ?	_answer ( NV , _smallest ( V0 , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) ) <EOS>
+which state has the highest population density ?	_answer ( NV , _largest ( NV , ( _state ( V1 ) , _density ( V1 , V0 ) ) ) ) <EOS>
+which of the states bordering pennsylvania has the largest population ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _largest ( NV , ( _state ( V1 ) , _next_to ( V1 , V0 ) , _population ( V1 , NV ) , _const ( V0 , _stateid ( hawaii ) ) ) ) ) ) <EOS>
+what state borders new york ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( ' new mexico ' ) ) ) ) <EOS>
+what is the highest point of the usa ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+how many people live in the united states ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _countryid ( usa ) ) ) ) <EOS>
+what states border texas and have a major river ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) , V2 ) ) <EOS>
+where is the lowest point in maryland ?	_answer ( NV , _lowest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( florida ) ) ) ) ) <EOS>
+what is the population of the state with the highest population density ?	_answer ( NV , ( _population ( NV , V1 ) , _largest ( NV , ( _state ( V1 ) , _density ( V1 , V0 ) ) ) ) ) <EOS>
+what states have cities named dallas ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _city ( V0 ) , _const ( V0 , _cityid ( springfield , _ ) ) ) ) <EOS>
+what is the population of the state that borders the most states ?	_answer ( NV , ( _population ( NV , V1 ) , _most ( V0 , NV , ( _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V1 ) , _next_to ( V1 , NV ) , _most ( V0 , NV ) , _most ( V0 , NV , ( _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V1 ) , _next_to ( V1 , NV ) , _const ( V0 , _stateid ( hawaii ) ) ) ) ) ) ) ) <EOS>
+how many states border the state with the largest population ?	_answer ( NV , _count ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _largest ( NV , ( _state ( V1 ) , _population ( V1 , V0 ) ) ) ) , V3 ) ) <EOS>
+what state has the largest area ?	_answer ( NV , _largest ( NV , ( _state ( V1 ) , _area ( V1 , V0 ) ) ) ) <EOS>
+which states does the mississippi run through ?	_answer ( NV , ( _state ( V0 ) , _const ( NV , _riverid ( mississippi ) ) , _traverse ( V0 , V1 ) ) ) <EOS>
+what is the total length of all rivers in the usa ?	_answer ( NV , ( _state ( NV ) , _const ( V0 , _cityid ( boston , _ ) ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) , V2 ) ) <EOS>
+how long is the delaware river ?	_answer ( NV , ( _len ( NV , V1 ) , _const ( V0 , _riverid ( missouri ) ) ) , _river ( V0 ) ) ) <EOS>
+what is the capital of colorado ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( colorado ) ) ) ) <EOS>
+what is the length of the colorado river ?	_answer ( NV , ( _len ( NV , V1 ) , _const ( V0 , _stateid ( colorado ) ) ) , _river ( V0 ) ) <EOS>
+what are the population densities of each us state ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( california ) ) ) ) <EOS>
+which state has the smallest average urban population ?	_answer ( NV , _smallest ( NV , ( _state ( V1 ) , _population ( V1 , V0 ) ) ) ) <EOS>
+what states have cities named rochester ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _city ( V0 ) , _const ( V0 , _cityid ( springfield , _ ) ) ) ) <EOS>
+which state has the lowest point that borders idaho ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _state ( V0 ) , _const ( V0 , _stateid ( hawaii ) ) ) ) <EOS>
+what is the capital of the smallest state ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+what is the population of washington ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( washington ) ) ) ) <EOS>
+iowa borders how many states ?	_answer ( NV , _count ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( iowa ) ) ) ) <EOS>
+which states have cities named austin ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _city ( V0 ) , _const ( V0 , _cityid ( austin , _ ) ) ) , _loc ( V1 , V2 ) ) <EOS>
+how many rivers are in the state that has the most rivers ?	_answer ( NV , _count ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( hawaii ) ) , _river ( V0 ) , _loc ( V0 , NV ) , _most ( V0 , , ( _state ( V1 ) , _loc ( V0 , V1 ) , _river ( V0 ) ) , V3 ) ) <EOS>
+rivers in new york ?	_answer ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( ' new mexico ' ) ) ) ) <EOS>
+what is the population density of maine ?	_answer ( NV , ( _density ( NV , V1 ) , _const ( V0 , _stateid ( maine ) ) ) ) <EOS>
+what is the length of the river that flows through the most states ?	_answer ( NV , ( _len ( NV , V1 ) , _most ( V0 , NV , ( _river ( V1 ) , _traverse ( V1 , V0 ) , _state ( V1 ) , _traverse ( V1 , V0 ) ) ) ) ) <EOS>
+what are the capital city in texas ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) , V2 ) ) <EOS>
+what states does the missouri run through ?	_answer ( NV , ( _state ( V0 ) , _const ( NV , _riverid ( missouri ) ) , _traverse ( V0 , V1 ) ) ) <EOS>
+what is the state with the largest area ?	_answer ( NV , _largest ( NV , ( _state ( V1 ) , _area ( V1 , V0 ) ) ) ) <EOS>
+through which states does the longest river in texas run ?	_answer ( NV , ( _state ( V0 ) , _longest ( NV , ( _river ( V1 ) , _traverse ( V0 , V1 ) , _river ( V0 ) ) ) ) <EOS>
+what is the population of new mexico ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( ' new mexico ' ) ) ) ) <EOS>
+what rivers are in states that border texas ?	_answer ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+which states border the missouri river ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( missouri ) ) ) ) <EOS>
+what is the smallest city in the usa ?	_answer ( NV , _smallest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+how tall is mount mckinley ?	_answer ( NV , ( _size ( NV , V1 ) , _const ( V0 , _placeid ( ' guadalupe peak ' ) ) ) ) <EOS>
+what is the highest point in delaware ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( florida ) ) ) ) ) <EOS>
+what is the lowest point in mississippi ?	_answer ( NV , _lowest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( mississippi ) ) ) ) ) <EOS>
+what state is miami in ?	_answer ( NV , ( _state ( V0 ) , _const ( NV , _cityid ( boston , _ ) ) , _loc ( V0 , V1 ) ) ) <EOS>
+what is the lowest point of all states through which the colorado river runs through ?	_answer ( NV , _lowest ( V0 , ( _place ( V0 ) , _traverse ( V0 , NV ) , _const ( V0 , _stateid ( colorado ) ) ) , _traverse ( V0 , V1 ) ) ) <EOS>
+what states contain at least one major rivers ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) <EOS>
+what is the biggest city in louisiana ?	_answer ( NV , _largest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( louisiana ) ) ) ) ) <EOS>
+what is the most dense state in the usa ?	_answer ( NV , _largest ( NV , ( _population ( V1 , V0 ) , _state ( V1 ) , _loc ( V1 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+what is the longest river in florida ?	_answer ( NV , _longest ( V0 , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( florida ) ) ) ) ) <EOS>
+what is the population of tempe arizona ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( boston , _ ) ) ) ) <EOS>
+what is the largest city in the smallest state in the usa ?	_answer ( NV , _largest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+what is the population of alaska ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( alaska ) ) ) ) <EOS>
+what is the highest point in nevada in meters ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) ) <EOS>
+what major cities are located in pennsylvania ?	_answer ( NV , ( _major ( V0 ) , _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( pennsylvania ) ) ) ) <EOS>
+what are the rivers in alaska ?	_answer ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( alaska ) ) ) ) <EOS>
+which states capital city is the largest ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _const ( V0 , _cityid ( denver , _ ) ) ) ) <EOS>
+where are mountains ?	_answer ( NV , ( _loc ( NV , V1 ) , _const ( V0 , _cityid ( ' san francisco ' , _ ) ) ) ) <EOS>
+what state borders the most states ?	_answer ( NV , _most ( V0 , NV , ( _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V1 ) , _next_to ( V1 , NV ) , _most ( V0 , NV ) , _most ( V0 , NV , ( _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V1 ) , _next_to ( V1 , NV ) , _most ( V0 , NV , ( _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V1 ) , _next_to ( V1
+what are the cities of the state with the highest point ?	_answer ( NV , ( _city ( V0 ) , _loc ( V0 , NV ) , _largest ( NV , ( _state ( V1 ) , _loc ( V0 , V1 ) , _place ( V0 ) ) ) ) ) <EOS>
+how much population does texas have ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+what are the major cities in new york ?	_answer ( NV , ( _major ( V0 ) , _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( ' new mexico ' ) ) ) ) <EOS>
+what is the highest mountain in us ?	_answer ( NV , _highest ( V0 , ( _mountain ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+what state contains the highest point of those the colorado river traverses ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( colorado ) ) ) ) ) ) <EOS>
+where is dallas ?	_answer ( NV , ( _loc ( NV , V1 ) , _const ( V0 , _cityid ( ' san diego ' , _ ) ) ) ) <EOS>
+where is the highest mountain of the united states ?	_answer ( NV , ( _loc ( NV , V1 ) , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) ) <EOS>
+what states does the delaware river run through ?	_answer ( NV , ( _state ( V0 ) , _const ( NV , _riverid ( missouri ) ) , _river ( V0 ) , _traverse ( V0 , V1 ) ) ) <EOS>
+how high is the highest point in america ?	_answer ( NV , ( _elevation ( NV , V1 ) , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( florida ) ) ) ) ) ) <EOS>
+what city has the most people ?	_answer ( NV , _largest ( NV , ( _city ( V1 ) , _population ( V1 , V0 ) ) ) ) <EOS>
+what is the density of the new york ?	_answer ( NV , ( _density ( NV , V1 ) , _const ( V0 , _stateid ( ' new mexico ' ) ) ) ) <EOS>
+what is the maximum elevation of san francisco ?	_answer ( NV , ( _elevation ( NV , V1 ) , _const ( V0 , _cityid ( boston , _ ) ) ) ) <EOS>
+how many capitals does rhode island have ?	_answer ( NV , ( _count ( NV , ( _state ( V1 ) , _const ( NV , _stateid ( ' south dakota ' ) ) , _loc ( V1 , V0 ) ) , V2 ) ) <EOS>
+what is the highest point in virginia ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( kansas ) ) ) ) ) <EOS>
+how long is the ohio river ?	_answer ( NV , ( _len ( NV , V1 ) , _const ( V0 , _stateid ( ohio ) ) ) ) <EOS>
+how long is the longest river in california ?	_answer ( NV , ( _len ( NV , V1 ) , _longest ( V0 , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) ) ) <EOS>
+what is the state with the smallest area ?	_answer ( NV , ( _state ( V0 ) , _area ( NV , V1 ) , _area ( V1 , V0 ) ) ) ) <EOS>
+which rivers do not run through texas ?	_answer ( NV , ( _river ( V0 ) , _traverse ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+which state has the most major rivers running through it ?	_answer ( NV , _most ( V0 , NV , ( _state ( V1 ) , _loc ( V0 , V1 ) , _major ( V0 ) , _river ( V0 ) , _traverse ( V0 , V1 ) ) ) ) <EOS>
+what is the lowest point in usa ?	_answer ( NV , _lowest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+what is the population of new york city ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( ' new mexico ' ) ) ) ) <EOS>
+which state has the biggest population ?	_answer ( NV , _largest ( NV , ( _state ( V1 ) , _population ( V1 , V0 ) ) ) ) <EOS>
+what is the largest state that borders texas ?	_answer ( NV , _largest ( V0 , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) ) <EOS>
+what is the largest city in rhode island ?	_answer ( NV , _largest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( ' rhode island ' ) ) ) ) ) <EOS>
+what is the population of tucson ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( boston , _ ) ) ) ) <EOS>
+what is the highest point in maine ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( louisiana ) ) ) ) ) <EOS>
+how many people live in minneapolis minnesota ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( kalamazoo , _ ) ) ) ) <EOS>
+which rivers do not run through usa ?	_answer ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( tennessee ) ) ) ) <EOS>
+name all the rivers in colorado ?	_answer ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( colorado ) ) ) ) <EOS>
+what is the longest river in the largest state ?	_answer ( NV , _longest ( V0 , ( _river ( V0 ) , _loc ( V0 , NV ) , _largest ( V0 , _state ( V0 ) ) ) ) ) <EOS>
+which state has the smallest population density ?	_answer ( NV , _smallest ( NV , ( _state ( V1 ) , _density ( V1 , V0 ) ) ) ) <EOS>
+what is capital of the state with the lowest point ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _state ( V0 ) , _loc ( NV , V1 ) , _lowest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( florida ) ) ) ) ) ) <EOS>
+how long is the longest river in the usa ?	_answer ( NV , ( _len ( NV , V1 ) , _longest ( V0 , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) ) <EOS>
+how many states border iowa ?	_answer ( NV , _count ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( iowa ) ) ) , V2 ) ) <EOS>
+what is the highest point in states bordering georgia ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( ohio ) ) ) ) ) <EOS>
+san antonio is in what state ?	_answer ( NV , ( _loc ( NV , V1 ) , _const ( V0 , _cityid ( ' san diego ' , _ ) ) ) ) <EOS>
+which river traverses most states ?	_answer ( NV , _most ( V0 , NV , ( _river ( V1 ) , _traverse ( V1 , V0 ) , _state ( V1 ) , _next_to ( V1 , NV ) , _const ( V0 , _stateid ( arizona ) ) ) ) ) <EOS>
+what is the area of ohio ?	_answer ( NV , ( _area ( NV , V1 ) , _const ( V0 , _stateid ( ohio ) ) ) ) <EOS>
+what is the longest river in the state with the most major cities ?	_answer ( NV , _longest ( V0 , ( _river ( V0 ) , _loc ( V0 , NV ) , _most ( V0 , NV , ( _state ( V1 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) ) ) <EOS>
+which states does the longest river run through ?	_answer ( NV , ( _state ( V0 ) , _longest ( NV , ( _state ( V1 ) , _traverse ( V0 , V1 ) ) ) ) <EOS>
+how many states does usa have ?	_answer ( NV , _count ( NV , ( _state ( V0 ) , _const ( NV , _countryid ( usa ) ) , _loc ( V1 , V0 ) ) , V2 ) ) <EOS>
+what is the population of the largest city in the state with the largest area ?	_answer ( NV , ( _population ( NV , V1 ) , _largest ( NV , ( _city ( V1 ) , _area ( V1 , V0 ) , _largest ( NV , ( _city ( V1 ) , _area ( V1 , V0 ) ) ) ) ) ) ) <EOS>
+what is the high point of wyoming ?	_answer ( NV , ( _elevation ( NV , V1 ) , _const ( V0 , _stateid ( wyoming ) ) ) ) <EOS>
+what is the highest mountain in the us ?	_answer ( NV , _highest ( V0 , ( _mountain ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+how many residents live in texas ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+what are the major cities in alabama ?	_answer ( NV , ( _major ( V0 ) , _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( alabama ) ) ) ) <EOS>
+what is the smallest state that borders the most states ?	_answer ( NV , _smallest ( V0 , ( _state ( V0 ) , _next_to ( V0 , NV ) , _most ( V0 , NV , ( _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V0 ) ) ) ) ) ) <EOS>
+what are all the rivers in texas ?	_answer ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+what is the least populous state ?	_answer ( NV , _smallest ( V0 , _state ( V0 ) ) ) <EOS>
+what is the population density of the largest state ?	_answer ( NV , ( _density ( NV , V1 ) , _largest ( V0 , _state ( V0 ) ) ) ) <EOS>
+which river runs through most states ?	_answer ( NV , _most ( V0 , NV , ( _river ( V1 ) , _traverse ( V0 , V1 ) , _state ( V0 ) ) ) ) <EOS>
+which state is mount mckinley in ?	_answer ( NV , ( _state ( V0 ) , _const ( NV , _cityid ( denver , _ ) ) , _loc ( V0 , V1 ) ) ) <EOS>
+which river goes through the most states ?	_answer ( NV , _most ( V0 , NV , ( _river ( V1 ) , _traverse ( V1 , V0 ) , _state ( V1 ) , _traverse ( V0 , V1 ) ) ) ) <EOS>
+what are the major cities in states through which the mississippi runs ?	_answer ( NV , ( _major ( V0 ) , _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _riverid ( mississippi ) ) , _traverse ( V0 , V1 ) ) ) <EOS>
+what is the highest elevation in texas ?	_answer ( NV , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) ) <EOS>
+which states border illinois ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( arizona ) ) ) ) <EOS>
+how many states does tennessee border ?	_answer ( NV , _count ( NV , ( _state ( V0 ) , _const ( NV , _stateid ( tennessee ) ) , _next_to ( V0 , V1 ) , V2 ) ) <EOS>
+how many people live in rhode island ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( ' san francisco ' , _ ) ) ) ) <EOS>
+number of people in boulder ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _cityid ( boulder , _ ) ) ) ) <EOS>
+tell me what cities are in texas ?	_answer ( NV , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+what river runs through the state with the most cities ?	_answer ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _most ( V0 , NV , ( _state ( V1 ) , _loc ( V0 , V1 ) , _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) ) ) <EOS>
+which states border the state with the smallest area ?	_answer ( NV , ( _state ( V0 ) , _area ( NV , V1 ) , _smallest ( NV , ( _state ( V1 ) , _area ( V1 , V0 ) ) ) ) ) <EOS>
+what states border michigan ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( michigan ) ) ) ) <EOS>
+what is the largest state bordering arkansas ?	_answer ( NV , _largest ( V0 , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( california ) ) ) ) ) <EOS>
+how long is the north platte river ?	_answer ( NV , ( _len ( NV , V1 ) , _const ( V0 , _cityid ( ' san francisco ' , _ ) ) ) ) <EOS>
+what state bordering nevada has the largest population ?	_answer ( NV , _largest ( NV , ( _state ( V1 ) , _population ( V1 , V0 ) ) ) ) <EOS>
+what is the capital of new york ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( ' new mexico ' ) ) ) ) <EOS>
+which rivers run through states with fewest cities ?	_answer ( NV , ( _river ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( colorado ) ) ) , V3 ) ) <EOS>
+what are the populations of the major cities of texas ?	_answer ( NV , ( _population ( NV , V1 ) , _major ( V0 ) , _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+what is the capital of the state with the longest river ?	_answer ( NV , ( _capital ( V0 ) , _loc ( V0 , NV ) , _largest ( NV , ( _state ( V1 ) , _loc ( V0 , V1 ) , _river ( V0 ) ) ) ) <EOS>
+which state has the most rivers ?	_answer ( NV , _most ( V0 , NV , ( _state ( V1 ) , _loc ( V0 , V1 ) , _river ( V0 ) ) ) ) <EOS>
+how many people live in the capital of texas ?	_answer ( NV , ( _population ( NV , V1 ) , _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+where is the most populated area of new mexico ?	_answer ( NV , ( _loc ( NV , V1 ) , _largest ( NV , ( _population ( V1 , V0 ) , _loc ( V1 , V0 ) , _const ( V0 , _cityid ( ' new hampshire ' , _ ) ) ) ) ) <EOS>
+how many states have a higher point than the highest point of the state with the largest capital city in the us ?	_answer ( NV , _count ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _capital ( V0 , _countryid ( usa ) ) , _loc ( NV , V1 ) , _capital ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) , V2 ) ) <EOS>
+how many people live in mississippi ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( mississippi ) ) ) ) <EOS>
+what is the largest city in smallest state through which the mississippi runs ?	_answer ( NV , _largest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _riverid ( mississippi ) ) , _traverse ( V0 , V1 ) ) ) ) <EOS>
+what states have cities named salt lake city ?	_answer ( NV , ( _state ( V0 ) , _loc ( NV , V1 ) , _city ( V0 ) , _const ( V0 , _stateid ( pennsylvania ) ) ) , V2 ) ) <EOS>
+what state has the smallest urban population ?	_answer ( NV , _smallest ( NV , ( _state ( V1 ) , _population ( V1 , V0 ) ) ) ) <EOS>
+how tall is the highest point in montana ?	_answer ( NV , ( _elevation ( NV , V1 ) , _highest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( montana ) ) ) ) ) ) <EOS>
+what is the smallest state that the mississippi river runs through ?	_answer ( NV , _smallest ( NV , ( _state ( V1 ) , _const ( NV , _riverid ( mississippi ) ) , _traverse ( V0 , V1 ) ) ) <EOS>
+what is the area of the texas state ?	_answer ( NV , ( _area ( NV , V1 ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+what are the major cities in vermont ?	_answer ( NV , ( _major ( V0 ) , _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( ' north carolina ' ) ) ) ) <EOS>
+what is the biggest capital city in the us ?	_answer ( NV , _largest ( V0 , ( _city ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) ) ) <EOS>
+where is the chattahoochee river ?	_answer ( NV , ( _loc ( NV , V1 ) , _const ( V0 , _cityid ( ' san diego ' , _ ) ) ) ) <EOS>
+what is the population of utah ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( arizona ) ) ) ) <EOS>
+how many states are there in the usa ?	_answer ( NV , _count ( NV , ( _state ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _countryid ( usa ) ) ) , V2 ) ) <EOS>
+what states are next to arizona ?	_answer ( NV , ( _state ( V0 ) , _next_to ( V0 , NV ) , _const ( V0 , _stateid ( arizona ) ) ) ) <EOS>
+what is the lowest point in arkansas ?	_answer ( NV , _lowest ( V0 , ( _place ( V0 ) , _loc ( V0 , NV ) , _const ( V0 , _stateid ( arkansas ) ) ) ) ) <EOS>
+what is the most populous state ?	_answer ( NV , _largest ( NV , ( _population ( V1 , V0 ) , _state ( V1 ) , _next_to ( V1 , V0 ) ) ) ) ) <EOS>
+what are the population of mississippi ?	_answer ( NV , ( _population ( NV , V1 ) , _const ( V0 , _stateid ( mississippi ) ) ) ) <EOS>
+which state borders the most states ?	_answer ( NV , _most ( V0 , NV , ( _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V1 ) , _next_to ( V1 , V0 ) , _state ( V0 ) ) ) ) <EOS>
+which us city has the highest population density ?	_answer ( NV , _largest ( NV , ( _const ( NV , ( _city ( V0 ) , _loc ( V0 , V1 ) , _population ( V2 , V1 ) ) ) ) ) <EOS>
+what is the area of wisconsin ?	_answer ( NV , ( _area ( NV , V1 ) , _const ( V0 , _stateid ( wisconsin ) ) ) ) <EOS>
+how large is texas ?	_answer ( NV , ( _size ( NV , V1 ) , _const ( V0 , _stateid ( texas ) ) ) ) <EOS>
+what is the population of the smallest state ?	_answer ( NV , ( _population ( NV , V1 ) , _smallest ( V0 , _state ( V0 ) ) ) ) <EOS>
+which is the density of the state that the largest river in the united states runs through ?	_answer ( NV , ( _density ( NV , V1 ) , _largest ( V0 , ( _river ( V0 ) , _traverse ( V0 , NV ) , _largest ( NV , ( _state ( V1 ) , _const ( V0 , _stateid ( texas ) ) ) ) ) ) <EOS>
