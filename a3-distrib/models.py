@@ -142,6 +142,7 @@ def train_hmm_model(sentences: List[LabeledSentence], silent: bool=False) -> Hmm
     init_counts = np.ones((len(tag_indexer)), dtype=float) * 0.001
     transition_counts = np.ones((len(tag_indexer),len(tag_indexer)), dtype=float) * 0.001
     emission_counts = np.ones((len(tag_indexer),len(word_indexer)), dtype=float) * 0.001
+
     for sentence in sentences:
         bio_tags = sentence.get_bio_tags()
         for i in range(0, len(sentence)):
@@ -396,7 +397,7 @@ def train_crf_model(sentences: List[LabeledSentence], silent: bool=False) -> Crf
         print("Training")
 
     weight_vector = UnregularizedAdagradTrainer(np.zeros((len(feature_indexer))), eta=1.0)
-    num_epochs = 3
+    num_epochs = 1
     random.seed(0)
 
     for epoch in range(0, num_epochs):

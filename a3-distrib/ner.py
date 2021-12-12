@@ -20,13 +20,13 @@ def _parse_args():
     parser.add_argument('--model', type=str, default='BAD', help='model to run (BAD, HMM, CRF)')
     parser.add_argument('--inference', type=str, default='VITERBI', help='inference to run (VITERBI, BEAM, or BOTH)')
 
-    parser.add_argument('--train_path', type=str, default='data/deu.train', help='path to train set (you should not need to modify)')
-    parser.add_argument('--dev_path', type=str, default='data/deu.testa', help='path to dev set (you should not need to modify)')
-    parser.add_argument('--blind_test_path', type=str, default='data/deu.testb', help='path to blind test set (you should not need to modify)')
+    # parser.add_argument('--train_path', type=str, default='data/deu.train', help='path to train set (you should not need to modify)')
+    # parser.add_argument('--dev_path', type=str, default='data/deu.testa', help='path to dev set (you should not need to modify)')
+    # parser.add_argument('--blind_test_path', type=str, default='data/deu.testb', help='path to blind test set (you should not need to modify)')
 
-    # parser.add_argument('--train_path', type=str, default='data/eng.train', help='path to train set (you should not need to modify)')
-    # parser.add_argument('--dev_path', type=str, default='data/eng.testa', help='path to dev set (you should not need to modify)')
-    # parser.add_argument('--blind_test_path', type=str, default='data/eng.testb.blind', help='path to blind test set (you should not need to modify)')
+    parser.add_argument('--train_path', type=str, default='data/eng.train', help='path to train set (you should not need to modify)')
+    parser.add_argument('--dev_path', type=str, default='data/eng.testa', help='path to dev set (you should not need to modify)')
+    parser.add_argument('--blind_test_path', type=str, default='data/eng.testb.blind', help='path to blind test set (you should not need to modify)')
 
     parser.add_argument('--test_output_path', type=str, default='eng.testb.out', help='output path for test predictions')
     parser.add_argument('--no_run_on_test', dest='run_on_test', default=True, action='store_false', help='skip printing output on the test set')
