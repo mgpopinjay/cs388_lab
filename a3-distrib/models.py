@@ -82,7 +82,7 @@ class HmmNerModel(object):
         viterbi = np.zeros((n_tags, n_tokens))
         backpointer = np.zeros((n_tags, n_tokens))
 
-        for s in range(N):
+        for s in range(n_tags):
             viterbi[s, 0] = self.init_log_probs[s] + self.scorer.score_emission(sentence_tokens, s, 0)  # Use Prob. Seq Scorer
             # print('\nViterbi at', s, ':', viterbi[s])
 
@@ -396,7 +396,7 @@ def train_crf_model(sentences: List[LabeledSentence], silent: bool=False) -> Crf
         print("Training")
 
     weight_vector = UnregularizedAdagradTrainer(np.zeros((len(feature_indexer))), eta=1.0)
-    num_epochs = 1
+    num_epochs = 3
     random.seed(0)
 
     for epoch in range(0, num_epochs):
