@@ -305,7 +305,7 @@ class CrfNerModel(object):
         :return: The LabeledSentence consisting of predictions over the sentence
         """
 
-        beam_size = 5
+        beam_size = 2
         beam_list = []
         tag_indexer = self.tag_indexer
 
@@ -388,7 +388,7 @@ def train_crf_model(sentences: List[LabeledSentence], silent: bool=False) -> Crf
     feature_cache = [[[[] for k in range(0, len(tag_indexer))] for j in range(0, len(sentences[i]))] for i in range(0, len(sentences))]
 
     for sentence_idx in range(0, len(sentences)):
-        if sentence_idx % 100 == 0 and not silent:
+        if sentence_idx % 1000 == 0 and not silent:
             print("Ex %i/%i" % (sentence_idx, len(sentences)))
         for word_idx in range(0, len(sentences[sentence_idx])):
             for tag_idx in range(0, len(tag_indexer)):
@@ -397,7 +397,7 @@ def train_crf_model(sentences: List[LabeledSentence], silent: bool=False) -> Crf
         print("Training")
 
     weight_vector = UnregularizedAdagradTrainer(np.zeros((len(feature_indexer))), eta=1.0)
-    num_epochs = 1
+    num_epochs = 3
     random.seed(0)
 
     for epoch in range(0, num_epochs):
@@ -410,7 +410,7 @@ def train_crf_model(sentences: List[LabeledSentence], silent: bool=False) -> Crf
         total_obj = 0.0
 
         for counter, i in enumerate(sent_indices):
-            if counter % 100 == 0 and not silent:
+            if counter % 1000 == 0 and not silent:
                 print("Ex %i/%i" % (counter, len(sentences)))
             scorer = FeatureBasedSequenceScorer(tag_indexer, weight_vector, feature_cache[i])
             (gold_log_prob, gradient) = compute_gradient(sentences[i], tag_indexer, scorer, feature_indexer)
