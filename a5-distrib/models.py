@@ -124,7 +124,7 @@ class Seq2SeqSemanticParser(nn.Module):
         unpacked =  []
 
         for ex in test_data:
-            start_word  = []
+            entry_word = []
             x_tensor = self.input_emb(torch.LongTensor(ex.x_indexed).unsqueeze(0))
             input_len = torch.LongTensor([len(ex.x_indexed)])
 
@@ -146,13 +146,15 @@ class Seq2SeqSemanticParser(nn.Module):
                 enc_output = enc_out[:len(ex.x_indexed), :].permute([1, 0, 2])
                 output, _, (h_n,c_n) = self.decoder(emb, h_n, c_n, torch.LongTensor([1]), enc_output)
                 prob += torch.max(F.log_softmax(output, dim=1))
-
                 token = torch.argmax(output)
-                start_word.append(token.item())
 
+                if token.item() == end_token:
+                    break
+
+                entry_word.append(token.item())
                 count += 1
 
-            predicted = list(map(lambda x: self.output_indexer.get_object(x),start_word))
+            predicted = list(map(lambda x: self.output_indexer.get_object(x),entry_word))
             unpacked.append([Derivation(ex, np.exp(prob.detach()), predicted)])
 
         return unpacked
@@ -413,7 +415,7 @@ def train_model_encdec(train_data: List[Example], dev_data: List[Example], input
     emb_dim = 300
     hidden_size = 256
     lr = args.lr        # default: 1e-3
-    epochs = 10         # default: 10
+    epochs = 20         # default: 10
 
 
     model = Seq2SeqSemanticParser(input_indexer, output_indexer, emb_dim, hidden_size)
