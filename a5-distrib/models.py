@@ -413,7 +413,7 @@ def train_model_encdec(train_data: List[Example], dev_data: List[Example], input
     emb_dim = 300
     hidden_size = 256
     lr = args.lr        # default: 1e-3
-    epochs = 2         # default: 10
+    epochs = 10         # default: 10
 
 
     model = Seq2SeqSemanticParser(input_indexer, output_indexer, emb_dim, hidden_size)
