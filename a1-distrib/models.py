@@ -520,7 +520,7 @@ class LogisticRegressionClassifier(SentimentClassifier):
                     accuracy[j] = 0
 
             if print_results:
-                print(f'Epoch: {i} --> Accuracy: {round(np.mean(accuracy), 2) * 100}%')
+                print(f'Epoch: {i} --> Training Accuracy: {round(np.mean(accuracy), 2) * 100}%')
 
         return self.feat_extractor
 
