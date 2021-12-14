@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 
 ###
 OPTIMAL_STEP_SIZE = .1  # tipping point around lr = 0.12
-
 ###
 
 def _parse_args():
