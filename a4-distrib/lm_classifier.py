@@ -37,7 +37,7 @@ def read_examples(file):
     for line in open(file):
         # Drop the last token (newline) but don't call strip() to keep whitespace
         all_lines.append(line[:-1])
-        print(line[:-1])
+        # print(line[:-1])
     print("%i lines read in" % len(all_lines))
     return all_lines
 
